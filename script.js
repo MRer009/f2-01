@@ -31,7 +31,7 @@ const data = [
   
   // 3. Remove Admins
   function removeAdmin() {
-    const removedAdmins = data.filter((person) => person.profession == "admin");
+    const removedAdmins = data.filter((person) => person.profession !== "admin");
     console.log("Removed admins:", removedAdmins);
   }
 
