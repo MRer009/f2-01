@@ -17,11 +17,11 @@ const data = [
   // 2. Add Data
   function addData() {
     const newData = {
-      id: data.length + 1,
+      
       name: prompt("Enter a name:"),
       age: parseInt(prompt("Enter an age:")),
       profession: prompt("Enter a profession:"),
-      salary: parseInt(prompt("Enter a salary:")),
+     
     };
     data.push(newData);
     console.log("New data added:", newData);
