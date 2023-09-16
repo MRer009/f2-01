@@ -86,12 +86,17 @@ const data = [
   
   // 10. Profession Count
   function getTotalProfessions() {
-    const developerCount = data.filter(
-      (person) => person.profession === "developer"
-    ).length;
-    const adminCount = data.filter(
-      (person) => person.profession === "admin"
-    ).length;
-    console.log("Total Developers:", developerCount);
-    console.log("Total Admins:", adminCount);
-  }
+    let developerCount =0;
+    let adminCount =0;
+    for(let i =0;i<data.length;i++){
+      const profession = data[i].profession;
+      if(profession ==="developer"){
+        developerCount++;
+      }
+      else if(profession ==="admin"){
+        adminCount++;
+      }
+    }
+    console.log("Total Developers",developerCount);
+    console.log("Total Admins",adminCount);
+  }
